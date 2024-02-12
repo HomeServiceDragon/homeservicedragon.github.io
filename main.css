@@ -1,0 +1,41 @@
+/* body background image */
+.bg-image {
+    background-image: url("assets/bg_msx_1080.png");
+    background-size: cover;
+    background-color: black;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* font properties */
+p {
+    font-weight: bolder;
+    font-size: 16pt;
+}
+
+p#content {
+    font-size: 14pt;
+}
+
+* {
+    text-align: center;
+    color: lavender;
+    font-family: sans-serif;
+
+}
+
+/* icons and images */
+img {
+    width: 32px;
+    height: 32px;
+}
+
+.top-image {
+    width: 150px;
+    height: 150px;
+}
+
+/* footer margin */
+footer {
+    margin-top: 145px;
+}
