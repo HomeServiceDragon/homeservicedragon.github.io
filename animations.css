@@ -1,0 +1,125 @@
+:root {
+    --bg-color: #0b003b;
+	--transaprent: #00000000;
+
+}
+
+
+/* Keyframes */
+@keyframes hoverhand {
+	0% {transform:translate(0px, 4px);}
+	50% {transform:translate(0px, -4px);}
+	100% {transform:translate(0px, 4px);}
+}
+
+@keyframes hover2 {
+	0% {transform:translate(0px, 2px);}
+	50% {transform:translate(0px, -2px);}
+	100% {transform:translate(0px, 2px);}
+}
+
+@keyframes hovertext {
+	0% {transform:translate(0px, 2px); filter:drop-shadow(0px 2px 2px #000000bb);}
+	50% {transform:translate(0px, -2px); filter:drop-shadow(0px 8px 8px #000000bb);}
+	100% {transform:translate(0px, 2px); filter:drop-shadow(0px 2px 2px #000000bb);}
+}
+
+@keyframes blurry {
+	0% {filter: blur(0px);}
+	14% {filter: blur(0px);}
+	16% {filter: blur(3px);}
+	18% {filter: blur(0px);}
+	48% {filter: blur(0px);}
+	50% {filter: blur(2px);}
+	51% {filter: blur(0px);}
+	52% {filter: blur(3px);}
+	53% {filter: blur(0px);}
+	76% {filter: blur(0px);}
+	78% {filter: blur(4px);}
+	80% {filter: blur(0px);}
+	100% {filter: blur(0px);}
+}
+
+@keyframes flicker {
+	0% {opacity:1.0;}
+	14% {opacity:1.0;}
+	14.5% {opacity:0.9;}
+	15% {opacity:1.0;}
+	47% {opacity:1.0;}
+	47.5% {opacity:0.8;}
+	48% {opacity:0.9;}
+	48.5% {opacity:0.7;}
+	49% {opacity:1.0;}
+	76% {opacity:1.0;}
+	76.5% {opacity:0.8;}
+	77% {opacity:1.0;}
+	100% {opacity:1.0;}
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--transaprent);
+	margin: 0px;
+    font-size:24px;
+	white-space: nowrap;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-weight:bold;
+    margin:-24px 0 0 0;
+    font-size: 42px;
+    letter-spacing: -2px;
+    transform:scaleY(1.10);
+}
+
+#separator {
+    font-weight:bold;
+    font-size: 42px;
+    letter-spacing: -5.5px;
+    transform:scaleY(1.10);
+}
+
+
+#footer {
+	position:relative;
+	margin-top:32px;
+	height:32px;
+	width:100%;
+}
+
+#links {
+	position:fixed;
+	top:10px;
+	left:60%;
+	margin-left:250px;
+	width:178px;
+	height:25px;
+	text-align:center;
+	font-size:12px;
+	background-color: #000000;
+	z-index:auto;
+	padding:25px;
+	border-top: 2px solid #eee;
+	border-left: 2px solid #eeeeee;
+	border-right: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+	transition:0.55s;
+	transition-delay: 0.1s;
+	transition-timing-function: cubic-bezier(0.5,1.8, 0.1, 0.5);
+	box-shadow: 0px 0px 0px 2px #202020;
+	overflow: hidden;
+	}
+
+#links:hover {
+	height:160px;
+	background-color: var(--transaprent);
+	transition:0.75s;
+	transition-timing-function: cubic-bezier(0.5,1.8, 0.1, 0.5);
+	box-shadow: 0px 0px 0px 2px #ffffff;
+	border-left: 2px solid #202020;
+	border-right: 2px solid #202020;
+	border-bottom: 2px solid #202020;
+    cursor:cell;
+	}
+
