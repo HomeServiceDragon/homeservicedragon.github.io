@@ -2,9 +2,16 @@
     --hovercolor: #707070;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents scrollbars from showing if not needed */
+}
+
 /* body background image */
-.bg-image::before {
-    background-image: url("https://i.imgur.com/EjVNTVX.gif");
+/* .bg-image::before {
+    background-image: url("https://i.imgur.com/8WNDD1f.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -15,8 +22,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.3;
-}
+    opacity: 0.5;
+} */
 
 /* font properties */
 @font-face {
@@ -55,7 +62,7 @@ p#content {
 
 
 /* icons and images */
-img {
+.favicon-img {
     width: 32px;
     height: 32px;
 }

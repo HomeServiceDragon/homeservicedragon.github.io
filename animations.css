@@ -1,11 +1,17 @@
 :root {
-    --bg-color: #0b003b;
+    --bg-color: #000000;
 	--transaprent: #00000000;
 
 }
 
 
 /* Keyframes */
+@keyframes fade {
+	0% {opacity:0;}
+	50% {opacity:0.8;}
+	100% {opacity:0;}
+	}
+
 @keyframes hoverhand {
 	0% {transform:translate(0px, 4px);}
 	50% {transform:translate(0px, -4px);}
@@ -56,6 +62,8 @@
 	100% {opacity:1.0;}
 }
 
+
+	
 body {
 	background-color: var(--bg-color);
 	color: var(--transaprent);
@@ -123,3 +131,18 @@ h2 {
     cursor:cell;
 	}
 
+	#lasers {
+	background-image: url("assets/bg_eb.png");
+	background-size:cover;
+	background-position:center;
+	width:100vw;
+	height:100vh;
+	position: fixed;
+	z-index:-1005;
+	image-rendering: crisp-edges;
+	pointer-events:none;
+	}
+	
+
+	
+	
