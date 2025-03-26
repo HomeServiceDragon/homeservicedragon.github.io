@@ -84,8 +84,8 @@ h2 {
 #separator {
     font-weight:bold;
     font-size: 42px;
-    letter-spacing: -5.5px;
     transform:scaleY(1.10);
+	font-family: Cascadia Code;
 }
 
 

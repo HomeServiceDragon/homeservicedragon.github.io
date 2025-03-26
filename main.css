@@ -25,6 +25,15 @@ html, body {
     opacity: 0.5;
 } */
 
+.ascii {
+    white-space: pre; /* Preserves ASCII formatting */
+    font-size: 18px; /* Adjust size for readability */
+    line-height: 1;
+    display: inline-block; /* Prevents full-width stretching */
+    margin-top: 30px; /* Adjust positioning */
+    margin-right: 160px;
+}
+
 /* font properties */
 @font-face {
     font-family: pixel;
@@ -35,6 +44,14 @@ html, body {
     font-family: DOS;
     src: url("fonts/DOSFont.ttf");
 }
+
+@font-face {
+    font-family: Cascadia Code;
+    src: url("fonts/CascadiaCode-Regular.otf");
+}
+
+
+
 p {
     font-weight: bolder;
     font-size: 22pt;
@@ -124,5 +141,14 @@ footer {
 
 #blacktext:hover{
     color: var(--hovercolor);
+}
+
+iframe
+{
+    position: absolute;
+    top: 100px; 
+    left: 600px; 
+    border: none; 
+    overflow:hidden;
 }
 
